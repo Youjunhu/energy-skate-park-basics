@@ -1,5 +1,5 @@
 {
-  "comment": "# energy-skate-park-basics 1.4.0-trackCanvasInChrome.0 Thu Jul 26 2018 12:22:02 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# energy-skate-park-basics 1.4.0-trackCanvasInChrome.1 Thu Jul 26 2018 12:26:56 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "energy-skate-park-basics": {
-    "sha": "122b89c5127c6b71ca0d89b7a8cda6e0d9cc93ee",
+    "sha": "3f949a6edf7e689ce245fe43c38a54de5fc29b67",
     "branch": "trackCanvasInChrome"
   },
   "joist": {
