@@ -242,10 +242,13 @@ define( function( require ) {
     speedometerNode.top = this.layoutBounds.minY + 5;
     this.addChild( speedometerNode );
 
-    // Layer which will contain all of the tracks
+    // Layer which will contain all of the tracks - on Chrome, we will render with canvas to prevent a strange rendering
+    // bug we noticed in https://github.com/phetsims/energy-skate-park-basics/issues/431
     var trackLayer = new Node( {
+      renderer: platform.chromium ? 'canvas' : null,
       tandem: tandem.createTandem( 'trackLayer' )
     } );
+    console.log( 'track renderer: ', trackLayer.renderer );
 
     // Switch between selectable tracks
     if ( !model.draggableTracks ) {
