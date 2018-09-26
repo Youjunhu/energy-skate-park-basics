@@ -60,7 +60,16 @@ define( function( require ) {
     Node.call( this, {
       children: [ leftSkaterImageNode, rightSkaterImageNode ],
       renderer: renderer,
-      tandem: tandem
+      tandem: tandem,
+
+      // a11y - use a focusable element to test how updating the position of the element in the PDOM impacts this sim,
+      // tag not intended for long term instrumentation, see
+      // https://github.com/phetsims/energy-skate-park-basics/issues/437
+      tagName: 'input',
+      inputType: 'button',
+      labelTagName: 'label',
+      labelContent: 'Grab the skater to drag'
+
     } );
 
     skater.directionProperty.link( function( direction ) {
